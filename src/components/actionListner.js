@@ -53,20 +53,32 @@ const ActionListner = () => {
   };
 
   const onKeyDown = (e) => {
+      console.log(e.key);
     switch (e.key) {
       case "ArrowLeft":
+        left();
+        break;
+        case "1":
         left();
         break;
       case "ArrowRight":
         right();
         break;
+        case "2":
+        right();
+        break;
       case "ArrowUp":
+        up();
+        break;
+        case "3":
         up();
         break;
       case "ArrowDown":
         down();
         break;
-
+        case "4":
+            down();
+            break;
       default:
     }
   };
